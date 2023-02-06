@@ -26,4 +26,7 @@ project/plugins/project/
 .bsp/
 .metals/
 .vscode/
+null/
+.bloop
 *.tasty
+metals.sbt
