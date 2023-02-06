@@ -3,20 +3,19 @@ object Main {
         println("-" * 50)
 
         {
-            val isSunnyDay = true 
-            val isRainyDay = true
-
-            def result = {
-                if(isSunnyDay)
-                    "I'm happy"
-                else if (isRainyDay)
-                    "I'm sad because it's raining"
-                else
-                    "I'm not sure how I feel about today"
-            }
+            val a: Int = 1338
+            val b: Boolean = true
+            val c: Char   = 't'
+            val d: String = "true"
+            val e: Unit  = {}
+            val f: Any  = if (true) 10 else "not 10"
             
-            println(result)
-            println(FarAway.hi)
+            println(a)
+            println(b)
+            println(c)
+            println(d)
+            println(e)
+            println(f)
         }
 
         println("-" * 50)
