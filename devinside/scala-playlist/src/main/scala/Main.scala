@@ -1,17 +1,24 @@
 object Main {
     def main(args: Array[String]): Unit = {
-        println()
+        println("-" * 50)
 
         {
-            lazy val myFavoriteNumber = {
-                println("Line 7")
-                1337 
+            val isSunnyDay = true 
+            val isRainyDay = true
+
+            def result = {
+                if(isSunnyDay)
+                    "I'm happy"
+                else if (isRainyDay)
+                    "I'm sad because it's raining"
+                else
+                    "I'm not sure how I feel about today"
             }
             
-            println(s"First time: $myFavoriteNumber")
-            println(s"Last time: $myFavoriteNumber")
+            println(result)
+            println(FarAway.hi)
         }
-        
-        println()
+
+        println("-" * 50)
     }
-}
+} 
