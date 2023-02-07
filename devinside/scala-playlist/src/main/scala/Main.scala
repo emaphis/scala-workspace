@@ -1,12 +1,13 @@
-
 object Main {
+
+  /** An Example */
+  def f() = {
+    println("Hello")
+  }
+
   def main(args: Array[String]): Unit = {
     println("-" * 50)
-    
-    {
-      println("Hello")
-    }
-    
+    f()
     println("-" * 50)
   }
 }
