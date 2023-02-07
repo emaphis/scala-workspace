@@ -1,6 +1,6 @@
 
-object Main {
-  def main(args: Array[String]): Unit = {
+object MainA {
+  def mainA(args: Array[String]): Unit = {
     println("-" * 50)
     
     {
@@ -51,8 +51,6 @@ object Main {
         "done"
       }
 
-      println(method1)
-      println(method2)
       println(method3)
     }
     
