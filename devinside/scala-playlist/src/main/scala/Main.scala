@@ -5,6 +5,7 @@ object Main {
     println("Hello")
   }
 
+  /** main program */
   def main(args: Array[String]): Unit = {
     println("-" * 50)
     f()
