@@ -2,7 +2,12 @@
 
 ## SBT
 
-> sbt  new scala/hello-world.g8
+<https://github.com/foundweekends/giter8/wiki/giter8-templates>
+
+> sbt  new scala/hello-world.
+> sbt new scala/scala3.g8
+> DevInsideYou/scala-seed.g8
+> DevInsideYou/scala3-seed.g8
 > sbt> ++3.2.2!
 
 ### ./project
