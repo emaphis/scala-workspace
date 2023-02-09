@@ -68,7 +68,7 @@ object MainH {
   }
 
   /** main program */
-  def main(args: Array[String]): Unit = {
+  def mainH(args: Array[String]): Unit = {
     println("-" * 50)
     f()
     println("-" * 50)
