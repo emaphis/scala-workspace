@@ -18,4 +18,7 @@ plugins.sbt  - SBT plugins
 > addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.1")
 ./target  -  SBT source code
 
-## ./src
+> console
+> :load .\src\main\scala\try_this.sc
+>
+## /src
