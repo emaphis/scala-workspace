@@ -5,3 +5,7 @@ Seven segment display clock from:
 Scala - Your First Programming Language - Part 14 - Seven-Segment Display Clock
 
 <https://www.youtube.com/watch?v=XaQb9cfXA0g&list=PLJGDHERh23x-YBJ8LmYU_IGBFflvsKfLu>
+
+## Description
+
+This program displays a two-dimensional digital clock on the console
