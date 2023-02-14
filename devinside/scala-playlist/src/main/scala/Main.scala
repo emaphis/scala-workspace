@@ -1,14 +1,15 @@
+// Video # 
 object Main {
 
   /** An Example */
-  def f() = {
+  def code(args: Array[String]) = {
     println("Hello")
   }
 
   /** main program */
   def mainT(args: Array[String]): Unit = {
     println("-" * 50)
-    f()
+    code(args)
     println("-" * 50)
   }
 }
