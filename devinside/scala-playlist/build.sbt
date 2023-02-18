@@ -8,5 +8,6 @@ ThisBuild / watchTriggeredMessage := Watch.clearScreenOnTrigger
 
 scalacOptions ++= Seq (
     "-deprecation",
-    "-feature"
+    "-feature",
+    "-unchecked"
 )
