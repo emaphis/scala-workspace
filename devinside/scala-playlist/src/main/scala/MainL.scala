@@ -94,7 +94,7 @@ object MainL {
   }
 
   /** main program */
-  def main(args: Array[String]): Unit = {
+  def mainL(args: Array[String]): Unit = {
     println("-" * 50)
     code(args)
     println("-" * 50)
