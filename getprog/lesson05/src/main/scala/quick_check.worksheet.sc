@@ -30,8 +30,5 @@ count()
 // 5.3 Does the following expression compile? If so, what is its output? ]
 //     for (a <- "hello") println(a)
 // Use the REPL to validate your hypothesis
-// A- Yes, it runs
+// A- Yes, it compiles and runs
 for (a <- "hello") println(a)
-
-
-// :load .\src\main\scala\QuickCheck.sc
