@@ -32,11 +32,12 @@ def myFunc2(n: Int): Boolean =
 
 // The keyword 'def' and a function name
 def myFunc2() = ???
+// ??? is a placeholder for a future function
 
 //  myFunc2()
 
 
-// Parameters
+// Parameter examples
 
 def MyFunc3 = ???
 def myFunc4() = ???
