@@ -6,7 +6,7 @@ ice to a cold drink or to reheat a hot one. Express these relations using classe
 and subclasses. 
  */
 
- abstract class Beverage(temperature: Int)
+ abstract class Beverage(var temperature: Int)
 
  class ColdBeverage(temperature: Int) extends Beverage(temperature) {
     def addMoreIce = temperature -= 5
@@ -15,4 +15,13 @@ and subclasses.
  class HotBeverage(temperature: Int) extends Beverage(temperature) {
     def reheat = temperature += 5
  }
+
+// testing
  
+ val coke = ColdBeverage(10)
+ coke.addMoreIce
+ coke.temperature == 5
+
+ val coffee = HotBeverage(100)
+ coffee.reheat
+ coffee.temperature == 105

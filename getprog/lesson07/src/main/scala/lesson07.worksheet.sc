@@ -17,6 +17,7 @@ class Robot2(val name: String)
 val tom2 = new Robot2("Tom")
 val john2 = new Robot2("John")
 
+// val make the parameter accessable.
 tom2.name
 john2.name
 
