@@ -13,13 +13,15 @@ def markExam1(q1: Double, q2: Double, q3: Double) =
 
 markExam1(1.5, 2.0, 2.5) == 7
 
+
 /** Listing 4.2 Marking an exam—a more readable version */
 def markExam2(q1: Double, q2: Double, q3: Double) =
-  val avgScore = (q1 + q2 + q3)
-  val scaledSocre = avgScore * 10 / 3
-  Math.round(scaledSocre)
+  val avgScore = (q1 + q2 + q3) / 3
+  val scaledScore = avgScore * 10 / 3
+  Math.round(scaledScore)
 
 markExam2(1.5, 2.0, 2.5) == 7
+
 
 /** Listing 4.3 Keeping track of the mark statistics */
 var marksSum = 0

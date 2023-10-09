@@ -37,5 +37,3 @@ markExam(1.5, 3.5, 1.0)
 averageMark == 7.0
 marksMin
 marksMax
-
-// :load .\src\main\scala\try_this.sc
