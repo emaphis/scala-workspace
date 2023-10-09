@@ -7,7 +7,10 @@ abstract class Robot0(name: String) {
 }
 
 
-// Listing 11.1 A vocabulary object 
+/**
+ * Vocabulary of sentances that a Robot can use.
+ * Listing 11.1 A vocabulary object
+ */
 object Vocabulary {
     val sentenceA = "Hi there!"
     val sentenceB = "Welcome"
@@ -19,26 +22,31 @@ Vocabulary.sentenceB
 Vocabulary.sentenceC
 
 
-// Listing 11.2
-
-// only two words
+/**
+ * Listing 11.2 A Singleton in Scala
+* only two words
+*/
 object MySingleton
 
 
 /// 11.2 Executable object
 
-// Listing 11.3 Hello World!  - See: ./HelloWorld/scala
+// Listing 11.3 Hello World!
+// See: ./lesson11/src/main/scala//HelloWorld.scala
 
 
 /// 11.3 Companion object
 
 // Listing 11.4 The most talkative robot
 
+/** The class Robot3 */
 abstract class Robot3(name: String) {
     def welcome: String
 }
 
-object Robot3 {  // companion object for Robot3
+/** The companion object of Robot3 */
+object Robot3 { 
+    /** Print message of most talkative Robot3 */
     def mostTalkative(r1: Robot3, r2: Robot3): Robot3 = { 
         val r1Size = r1.welcome.length 
         val r2Size = r2.welcome.length 
@@ -66,6 +74,7 @@ alice3.welcome
 
 class Person(val name: String, val age: Int)
 
+// Companion object
 object Person {
 
     def apply(p1: Person, p2: Person): Person = 
@@ -91,4 +100,5 @@ class Test(n: Int)
 object Test
 
 val test1 = new Test(1)
+// works in Scala 3
 val test2 = Test(2)

@@ -16,6 +16,7 @@ object MySnippet
 
 //val snipp = new MySnippet   // wont compile
 // Not found: type MySnippet
+MySnippet
 
 
 /*
@@ -37,7 +38,7 @@ Quick Check 11.3 Consider the function welcome defined in the class Robot. Is it
 static method? Why?
 
 Answer:
-No, It's a public member of the Robot heiarche
+No, It's a public member of the Robot3 not static
 */
 
 

@@ -10,8 +10,17 @@ object HelloWorld {
   //   println("Hello world")
   // }
 
-  // The @main annotation
+  // Scala 3: @main annotation
   @main def hello: Unit = {
     println("Hello from @main")
   }
+
+  // Command line arguements
+  // $ sbt
+  // run 5 test
+  // testtesttesttesttest
+  //@main
+  //def echo(n: Int, word: String) = {
+  //    println(word * n)
+  //}
 }
