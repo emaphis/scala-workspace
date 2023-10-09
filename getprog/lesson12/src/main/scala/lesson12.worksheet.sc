@@ -2,7 +2,7 @@
 
 /// 12.1 Defining traits
 
-// 12.1 Defining traits
+// 12.1 The trait Animal
 trait Animal {
 
     def sleep = "ZzZ"
@@ -17,12 +17,12 @@ trait Animal {
 
 // Listing 12.2 The trait Nameable
 
-trait Nameable {
+trait Nameable0 {
     def name: String
 }
 
 // can be written in Scala 3 as
-trait Nameable2(name: String)
+trait Nameable(val name: String)
  
 
 ///.12.2 Extending traits
@@ -35,12 +35,11 @@ class Cat extends Animal {
     override def eat(food: String): String = s"a car is eating $food"
 
     override def move(x: Int, y: Int): String = s"the cat is moving to ($x,$y)"
-
 }
 
 
 // Listing 12.4 The Dog class
-class Dog(val name: String) extends Animal with Nameable {
+class Dog(name: String) extends Animal with Nameable(name) {
 
     override def eat(food: String): String = s"$food $food"
 
@@ -85,7 +84,8 @@ enum  Suit2 {
 }
 
 Suit2.Hearts
-Suit2.values
+val vals = Suit2.values
+println(vals)
 Suit2.fromOrdinal(0)
 
 
@@ -98,4 +98,5 @@ enum Country(val code: String) {
     case Japan extends Country("JP")
 }
 
-Country.UnitedKingdom.code
+Country.UnitedKingdom.code == "UK"
+Country.Japan.code == "JP"

@@ -17,5 +17,5 @@ class Clothing(val color: String) extends Color
 val chair = new Furnature("red")
 val shirt = new Clothing("blue")
 
-chair.color
-shirt.color
+chair.color == "red"
+shirt.color == "blue"
