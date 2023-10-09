@@ -7,6 +7,9 @@ Scala; make it publicly usable.
 
 val name = "Scala"
 
+// publicly readable
+name
+
 
 /*
 Quick Check 10.2 Consider the following snippet of code: is age accessible from
@@ -18,7 +21,7 @@ the class Student? Use the REPL to validate your hypothesis.
 
     class Student extends Person
 */
-// Answer:  No, the value is accesible from the Person class
+// Answer:  No, the value is not accesible from the Person class
 class Person {
     private val age = 18 
 }
@@ -54,4 +57,4 @@ class Party4 extends Event4 {
 
 val evn = new Event4
 
-// evn.estimatedCosts(13)  // no access
+// evn.estimatedCosts(13)  // no access because parent field is 'protected'

@@ -17,7 +17,7 @@ party1.register(10)  // ok
 party1.attendees += 3   // opps!
 party1.attendees
 
-// public val a = "Hello"   // 'public' doesn't exist in scala - default
+// public val a = "Hello"   // 'public' keyword doesn't exist in scala - default
 val b = "world"
 
 
@@ -72,6 +72,6 @@ class Party4 extends Event4 {
 
 val party4 = new Party4()
 party4.register(9)
-party4.cost
+party4.cost == 50.0
 party4.register(10)
-party4.cost
+party4.cost == 234.46
