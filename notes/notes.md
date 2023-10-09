@@ -2,13 +2,23 @@
 
 ## SBT
 
+## Creating a new SBT project
+
+- Giter8 templates
+
+<https://www.foundweekends.org>
+
 <https://github.com/foundweekends/giter8/wiki/giter8-templates>
 
-> sbt  new scala/hello-world.
+$ sbt
+
 > sbt new scala/scala3.g8
 > DevInsideYou/scala-seed.g8
 > DevInsideYou/scala3-seed.g8
-> sbt> ++3.2.2!
+
+- changing Scala version in SBT
+
+> sbt> ++3.3.2!
 
 ### ./project
 
