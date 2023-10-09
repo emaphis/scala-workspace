@@ -19,4 +19,4 @@ Add two files to it:
 import my.quick.check.{TestA, TestB}
 
 val testa = new TestA()
-val testb = new TextB()
+val testb = new TestB()

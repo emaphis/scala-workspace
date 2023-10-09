@@ -18,11 +18,11 @@ println(strn)
 
 // Listing 9.2 Several uses of import
 
-import scala.concurrent.duration._                  // import everything from s.c.d
+import scala.concurrent.duration.*                  // import everything from s.c.d
 import scala.concurrent.duration.FiniteDuration     // imports class FiniteDuration from s.c.d
 import scala.concurrent.duration.Duration.Inf       // imports the value Inf from s.c.d
 import scala.concurrent.duration.Duration.create    // imports the function create from s.c.d.D 
-import scala.io.{Source => Src}                     // imports Source and aliases it to Src
+import scala.io.{Source as Src}                     // imports Source and aliases it to Src
 import scala.math.{BigDecimal, BigInt}              // imports BigDecimal and BigInt 
 
 
@@ -35,4 +35,5 @@ import my.example.io.MyExample
 
 val myexample = new MyExample()
 
+// Read the sbt build file.
 val strn2 = myexample.readFileIntoString("build.sbt")
