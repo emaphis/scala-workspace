@@ -1,4 +1,8 @@
-// Leeson 8 - Vending Machine
+// Lesson 8 - Vending Machine
+
+// 8.1 Setting up the vending machine
+
+// 8.1.1 The VendingMachine class and its APIs
 
 // Listing 8.1 The VendingMachine class
 class VendingMachine {
@@ -10,10 +14,10 @@ class VendingMachine {
 
     // Listing 8.2 API for VendingMachine
 
+    // Listing 8.4 Implementation of function buy for VendingMachine
     def buy(product: String, money: Double): String = 
-        // Listing 8.4 Implementation of function buy for VendingMachine
         if (!isProductAvailable(product))
-            s"Sorry, produce $product is not available"
+            s"Sorry, product $product is not available"
         else if(!isMoneyEnough(product, money))
             "Please insert more money"
         else completeRequest(product, money)
@@ -79,8 +83,8 @@ machine.totalMoney
 
 // Vars are probamatic
 
-// Strins as the representation of the product
+// Strings as the representation of the product
 
 // String as the return type
 
-// The Vendingmachine is not configurableS
+// The Vendingmachine is not configurable

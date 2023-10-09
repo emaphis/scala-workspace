@@ -8,17 +8,14 @@ class VendingMachine {
 
     var totalMoney = 0.0
 
-    //  API for VendingMachine
     def buy(product: String, money: Double): String = 
-        // Listing 8.4 Implementation of function buy for VendingMachine
         if (!isProductAvailable(product))
-            s"Sorry, produce $product is not available"
+            s"Sorry, product $product is not available"
         else if(!isMoneyEnough(product, money))
             "Please insert more money"
         else completeRequest(product, money)
 
-    // Main operations for VendingMachine
-    
+
     // Checks for VendingMachine
     def isProductAvailable(product: String): Boolean =
         val productQuantity =
