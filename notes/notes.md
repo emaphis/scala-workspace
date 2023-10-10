@@ -13,6 +13,7 @@
 $ sbt
 
 > sbt new scala/scala3.g8
+> sbt new scala/hello-world.g8
 > DevInsideYou/scala-seed.g8
 > DevInsideYou/scala3-seed.g8
 
@@ -23,7 +24,7 @@ $ sbt
 ### ./project
 
 build.properties  -- sbt version
-> sbt.version=1.8.2  -- .project/build.properties
+> sbt.version=1.9.6  -- .project/build.properties
 plugins.sbt  - SBT plugins
 > addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.1")
 ./target  -  SBT source code
