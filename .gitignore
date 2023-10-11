@@ -30,3 +30,12 @@ null/
 .bloop
 *.tasty
 metals.sbt
++# macOS
++.DS_Store
+
+.scala-buld/
+
+# IDEA
+.idea
+.idea_modules
+/.worksheet/
