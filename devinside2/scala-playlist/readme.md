@@ -10,4 +10,8 @@ src/main/scala/Program.scala
 
 scopes val, lazy val, def, var
 
-src/main/scala/Main.scala
+src/main/scala/Main3.scala
+
+## Part 4 - if expressions can be complicated
+
+src/main/scala/Main4.scala

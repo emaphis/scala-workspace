@@ -7,6 +7,7 @@ Notes from the videos - may transfer to more permanent and organized notes
 scope, val, lazy val, def, var in Scala
 
 ''' scala
+
 {
     {
         println("a scope")
@@ -21,7 +22,9 @@ scope, val, lazy val, def, var in Scala
         1337
     }  // return 1337
 }
+
 '''
+
 // val      is a value (stored in memory)
 
 // def      is a definition (ontlh the computation is stored)
@@ -29,3 +32,9 @@ scope, val, lazy val, def, var in Scala
 // lazy val is value that behaves first like def then a val
 
 // var      is a memory location that store vals and allows them to be updated later
+
+## Part 4 - if expressions can be complicated
+
+'if' expressions control which scope gets executed based on a boolean expresson and returns a value which could be unit.
+
+'if' expression can return 'Any' type
