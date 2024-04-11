@@ -9,4 +9,3 @@ scalacOptions ++= Seq (
     "-feature",
     "-unchecked"
 )
-
