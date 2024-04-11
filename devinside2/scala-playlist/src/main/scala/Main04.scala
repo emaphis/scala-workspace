@@ -21,7 +21,7 @@ object Main4 {
       }
 
       println(result)
-
+      
       // types
       println(10)
       println(true)

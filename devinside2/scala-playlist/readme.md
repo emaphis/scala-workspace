@@ -10,8 +10,12 @@ src/main/scala/Program.scala
 
 scopes val, lazy val, def, var
 
-src/main/scala/Main3.scala
+src/main/scala/Main03.scala
 
 ## Part 4 - if expressions can be complicated
 
-src/main/scala/Main4.scala
+src/main/scala/Main04.scala
+
+## Part 5 - Introduction to Type Systems
+
+src/main/scala/Main05.scala

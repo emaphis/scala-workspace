@@ -38,3 +38,5 @@ scope, val, lazy val, def, var in Scala
 'if' expressions control which scope gets executed based on a boolean expresson and returns a value which could be unit.
 
 'if' expression can return 'Any' type
+
+## Part 5 - Introduction to Type Systems
