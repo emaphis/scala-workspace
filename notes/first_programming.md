@@ -40,3 +40,15 @@ scope, val, lazy val, def, var in Scala
 'if' expression can return 'Any' type
 
 ## Part 5 - Introduction to Type Systems
+
+Type are proof the program is using data correctly.
+
+Int, Boolean, Char, String, Unit, Any
+
+Literals: 1337, true, 't', "True", {}
+
+'type' definitions - 'type A = B'
+
+Progress: If an expression is well-type (it compiles) it either evaluates or it is already a value.
+
+Preservation: If an expression is well-type and it evaluates the result will have the same type.
