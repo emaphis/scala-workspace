@@ -52,3 +52,17 @@ Literals: 1337, true, 't', "True", {}
 Progress: If an expression is well-type (it compiles) it either evaluates or it is already a value.
 
 Preservation: If an expression is well-type and it evaluates the result will have the same type.
+
+## Part 6 - (Sub)routines
+
+A way to define scopes for later use.
+
+lambda functions, default arguments, named parameters
+
+'''scala
+
+def fun(a: Int = 3, b: String = "3") = { println(a,b) }
+
+val fun = (a: Int, b: String) => println(a,b)
+
+'''

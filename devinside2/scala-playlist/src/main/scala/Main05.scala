@@ -2,7 +2,7 @@
 
 object Main5{
 
-    def main(args: Array[String]): Unit = {
+    def main05(args: Array[String]): Unit = {
         println("~" * 50)
 
         {

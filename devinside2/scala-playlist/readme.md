@@ -19,3 +19,7 @@ src/main/scala/Main04.scala
 ## Part 5 - Introduction to Type Systems
 
 src/main/scala/Main05.scala
+
+## Part 6 - (Sub)routines
+
+src/main/scala/Main06.scala

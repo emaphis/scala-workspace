@@ -1,6 +1,6 @@
 // Part 4 - if expressions can be complicated
 
-object Main4 {
+object Main04 {
 
   def hi = "hello"
 
@@ -28,14 +28,14 @@ object Main4 {
       println("true")
 
       // more scopes
-      println(Main4.hi)
-      println(FarAway.hello)
+      println(Main04.hi)
+      println(FarAway1.hello)
     }
 
     println("~" * 50)
   }
 }
 
-object FarAway {
+object FarAway1 {
     def hello = "hi"
 }
