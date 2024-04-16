@@ -84,3 +84,5 @@ projects\plugins.sbt
 addSbtPlugin("io.spray" % "sbt-revolver" % "0.10.0")
 
 > reStart, reStop, reStatus, ~reStart
+
+## Part 8 - Primitive Types on the JVM

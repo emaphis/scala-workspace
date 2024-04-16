@@ -31,3 +31,7 @@ src/main/scala/Main07a.scala
 ## Part 7.2 - Recursion
 
 src/main/scala/Main07b.scala
+
+## Part 8 - Primitive Types on the JVM
+
+src/main/scala/Main08.scala
