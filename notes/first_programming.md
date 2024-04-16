@@ -66,3 +66,21 @@ def fun(a: Int = 3, b: String = "3") = { println(a,b) }
 val fun = (a: Int, b: String) => println(a,b)
 
 '''
+
+## Part 7.1 - Recursion
+
+methods that call themselves
+
+recursive mothods must declare a return type
+
+recursive methods must hava a base case
+
+### sbt plugins
+
+For more control of program execution
+
+projects\plugins.sbt
+
+addSbtPlugin("io.spray" % "sbt-revolver" % "0.10.0")
+
+> reStart, reStop, reStatus, ~reStart

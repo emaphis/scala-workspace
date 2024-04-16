@@ -23,3 +23,11 @@ src/main/scala/Main05.scala
 ## Part 6 - (Sub)routines
 
 src/main/scala/Main06.scala
+
+## Part 7.1 - Recursion
+
+src/main/scala/Main07a.scala
+
+## Part 7.2 - Recursion
+
+src/main/scala/Main07b.scala
