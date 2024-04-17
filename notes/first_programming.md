@@ -86,3 +86,7 @@ addSbtPlugin("io.spray" % "sbt-revolver" % "0.10.0")
 > reStart, reStop, reStatus, ~reStart
 
 ## Part 8 - Primitive Types on the JVM
+
+Byte, Char, Int, Long, Float, Double, Boolean, Unit
+
+## Part 9 - Ways of Creation - Part 1 - Literals

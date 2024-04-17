@@ -35,3 +35,7 @@ src/main/scala/Main07b.scala
 ## Part 8 - Primitive Types on the JVM
 
 src/main/scala/Main08.scala
+
+## Part 9 - Ways of Creation - Part 1 - Literals
+
+src/main/scala/Main09.scala

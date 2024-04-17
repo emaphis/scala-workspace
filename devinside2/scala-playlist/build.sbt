@@ -1,6 +1,6 @@
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.12.18"
+scalaVersion := "2.12.19"
 
 ThisBuild / watchTriggeredMessage := Watch.clearScreenOnTrigger
 
