@@ -39,3 +39,7 @@ src/main/scala/Main08.scala
 ## Part 9 - Ways of Creation - Part 1 - Literals
 
 src/main/scala/Main09.scala
+
+## Part 10 - Ways of Creation - Part 2 - Composition
+
+src/main/scala/Main10.scala

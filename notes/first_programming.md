@@ -90,3 +90,5 @@ addSbtPlugin("io.spray" % "sbt-revolver" % "0.10.0")
 Byte, Char, Int, Long, Float, Double, Boolean, Unit
 
 ## Part 9 - Ways of Creation - Part 1 - Literals
+
+## Part 10 - Ways of Creation - Part 2 - Composition
