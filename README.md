@@ -9,3 +9,7 @@
 ## Get Programming with Scala
 
 ./get-programming
+
+## Programming Scala - Dean Wampler
+
+./progscala
