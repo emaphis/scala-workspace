@@ -10,6 +10,10 @@
 
 ./get-programming
 
-## Programming Scala - Dean Wampler
+## Programming Scala 3 - Dean Wampler
 
 ./progscala
+
+## Projects for Scala MOOC.
+
+./mooc
