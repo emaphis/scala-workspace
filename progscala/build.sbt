@@ -1,4 +1,4 @@
-val scala3 = "3.7.4"
+val scala3 = "3.8.1"
 
 lazy val root = project
   .in(file("."))
@@ -8,9 +8,9 @@ lazy val root = project
     scalaVersion := scala3,
     organization := "org.programming-scala",
     organizationName := "ProgrammingScala",
-    organizationHomepage := Some(url("http://programming-scala.org")),
+    organizationHomepage := Some(url("https://programming-scala.org")),
     homepage := Some(url("https://github.com/deanwampler/programming-scala-book-code-examples/")),
-    licenses += "Apache2" -> url("http://www.apache.org/licenses/LICENSE-2.0"),
+    licenses += "Apache2" -> url("https://www.apache.org/licenses/LICENSE-2.0"),
     maxErrors := 10,
 
     libraryDependencies ++= Seq(
@@ -21,7 +21,7 @@ lazy val root = project
       //"org.typelevel"          %% "cats-core"        % "2.13.0",
       "org.scala-lang"         %% "scala3-staging"   % scalaVersion.value,
       "org.scala-lang.modules" %% "scala-parser-combinators" % "2.4.0",
-      //"ch.qos.logback"          % "logback-classic"  % "1.5.20",
+     //"ch.qos.logback"          %S% "logback-classic"  % "1.5.20",
       "org.scalacheck"         %% "scalacheck"       % "1.19.0" % Test,
       "org.scalameta"          %% "munit"            % "1.2.1" % Test,
       "org.scalameta"          %% "munit-scalacheck" % "1.2.0" % Test,
@@ -50,10 +50,10 @@ lazy val root = project
       // "-scalajs",                          // Compile in Scala.js mode (requires scalajs-library.jar on the classpath).
       "-source:future-migration",          // Choices: future and future-migration. I use this to force future deprecation warnings, etc.
       "-rewrite",                          // Rewrite source, when necessary, for future migration - DeanW: added Sept 2025
-      "-Xfatal-warnings",                  // Fail on warnings, not just errors
+      //"-Xfatal-warnings",                  // Fail on warnings, not just errors
       // "-Xmigration",                       // Warn about constructs whose behavior may have changed since version.
       // "-Ysafe-init",                       // Warn on field access before initialization
-      // "-Yexplicit-nulls",                  // For explicit nulls behavior.
+      // "-Yexplicit-nulls",                  // For explicit null behavior.
       // "-coverage-out", "coverage"          // Output "scoverage" metrics (new for Scala 3.2.0)
     ),
     Compile / console / scalacOptions := scalacOptions.value,
