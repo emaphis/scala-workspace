@@ -33,9 +33,10 @@ metals.sbt
 +# macOS
 +.DS_Store
 
-.scala-buld/
+.scala-build/
 
 # IDEA
 .idea
 .idea_modules
 /.worksheet/
+**/.scala-build/
