@@ -23,7 +23,7 @@ lazy val root = project
       "org.scala-lang.modules" %% "scala-parser-combinators" % "2.4.0",
      //"ch.qos.logback"          %S% "logback-classic"  % "1.5.20",
       "org.scalacheck"         %% "scalacheck"       % "1.19.0" % Test,
-      "org.scalameta"          %% "munit"            % "1.2.1" % Test,
+      "org.scalameta"          %% "munit"            % "1.2.2" % Test,
       "org.scalameta"          %% "munit-scalacheck" % "1.2.0" % Test,
       "com.eed3si9n.expecty"   %% "expecty"          % "0.17.1" % Test,
     ),
@@ -50,7 +50,8 @@ lazy val root = project
       // "-scalajs",                          // Compile in Scala.js mode (requires scalajs-library.jar on the classpath).
       "-source:future-migration",          // Choices: future and future-migration. I use this to force future deprecation warnings, etc.
       "-rewrite",                          // Rewrite source, when necessary, for future migration - DeanW: added Sept 2025
-      //"-Xfatal-warnings",                  // Fail on warnings, not just errors
+      //"-Xfatal-warnings",                  // Fail on warnings, not just errors - deprecated in3.8
+      "-Werror",                              // Fail on warnings, not just errors
       // "-Xmigration",                       // Warn about constructs whose behavior may have changed since version.
       // "-Ysafe-init",                       // Warn on field access before initialization
       // "-Yexplicit-nulls",                  // For explicit null behavior.
