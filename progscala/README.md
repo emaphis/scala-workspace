@@ -2,6 +2,10 @@
 
 By Dean Wampler
 
+Book's site: <https://deanwampler.github.io/books/programmingscala.html>
+
+Example repository <https://github.com/deanwampler/programming-scala-book-code-examples>
+
 ## sbt project compiled with Scala 3
 
 ### Usage
