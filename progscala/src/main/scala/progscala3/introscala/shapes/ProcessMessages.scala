@@ -13,6 +13,6 @@ object ProcessMessages:
                 shape.draw(str => println(s"ProcessingMessage: $str"))
                 Response(s"ProcessingMessage: $shape drawn")
             case Response(unexpected) =>
-                val response = Response(s"Error: Unexptected Response: $unexpected")
-                println(s"ProccessingMessage: $response")
+                val response = Response(s"Error: Unexpected Response: $unexpected")
+                println(s"ProcessingMessage: $response")
                 response
