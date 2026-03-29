@@ -25,7 +25,7 @@ case class Rectangle(lowerLeft: Point, height: Double, width: Double) extends Sh
 case class Triangle(point1: Point, point2: Point, point3: Point) extends Shape
 
 val c = Circle(Point(1.0, 2.0), 3.0)
-c.draw(Point(0.5, 0.5)) { msg => println(msg) } 
+c.draw(Point(1.0, 2.0)) { msg => println(msg) }
 
 c.draw(Point(1.0, 2.0)) { msg => println(msg) }
 c.draw(Point(1.0, 2.0)) { println }
