@@ -1,8 +1,5 @@
-// Step4. Write some Scala scripts
-// Consuming command-line arguments
-
-// run with `--` to provide command-line arguments
-// > scala ./helloarg.scala -- Alice
-
-@main def m2(args: String*) =
+// Hello args example program
+@main def m2(args: String*): Unit =
+  // Say hello to the first argument
   println("Hello, " + args(0) + "!")
+
