@@ -1,6 +1,6 @@
 # Repo for Programming in Scala - 5th Edition
 
-Chapers
+Chapters
 
 1. A Scalable Language
 2. First Steps in Scala
