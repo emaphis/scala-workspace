@@ -18,25 +18,25 @@ class Rational(n: Int, d: Int):
   
   override def toString: String = s"$numerator/$denominator"
   
-  def + (that: Rational): Rational =
+  def +(that: Rational): Rational =
     Rational(
       numerator * that.denominator + that.numerator * denominator,
       denominator * that.denominator
     )
 
-  def + (i: Int): Rational =
+  def +(i: Int): Rational =
     Rational(numerator + i * denominator, denominator)
 
-  def - (that: Rational): Rational =
+  def -(that: Rational): Rational =
     Rational(
       numerator * that.denominator - that.numerator * denominator,
       denominator * that.denominator
     )
 
-  def - (i: Int): Rational =
+  def -(i: Int): Rational =
     Rational(numerator - i * denominator, denominator)
 
-  def * (that: Rational): Rational =
+  def *(that: Rational): Rational =
     Rational(numerator * that.numerator, denominator * that.denominator)
 
   def *(i: Int): Rational =
