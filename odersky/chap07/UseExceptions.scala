@@ -11,19 +11,26 @@ object UseExceptions:
     try
       Exceptions.throws1()
     catch
-      case ex: Throwable =>
-        println("ex [" + ex + "]")
+      case ex1: Throwable =>
+        println("ex1 [" + ex1 + "]")
 
     try
       println("Exceptions.half(2) [" + Exceptions.half(2) + "]")
       Exceptions.half(3)
     catch
-      case ex: Throwable =>
-        println("ex [" + ex + "]")
+      case ex2: Throwable =>
+        println("ex2 [" + ex2 + "]")
 
     Exceptions.throws3()
 
+    try
+      Exceptions.finally1()
+    catch
+      case ex4: Throwable =>
+        println("ex4 [" + ex4 + "]")
 
+    //println("Exceptions.f [" + Exceptions.f() + "]")
+    //println("Exceptions.g [" + Exceptions.g() + "]")
 
+    println("Exceptions.urlFor(\"blah\") [" + Exceptions.urlFor("blah") + "]")
   }
-
