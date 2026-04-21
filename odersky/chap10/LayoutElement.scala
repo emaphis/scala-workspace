@@ -1,10 +1,11 @@
 // Chapter 10
 // Composition and Inheritance
 
-//
+// 10.14 Heighten and widen
 
 package chap10
 
+// Listing 10.12 · Hiding implementation with private classes.
 object Element:
 
   // Listing 10.3 · Defining VectorElement as a subclass of Element.
@@ -22,7 +23,7 @@ object Element:
     override val height: Int
   ) extends Element:
     private val line = ch.toString * width
-    def contents = Vector.fill(height)(line)
+    def contents: Vector[String] = Vector.fill(height)(line)
 
   def elem(contents: Vector[String]): Element =
     VectorElement(contents)
@@ -35,9 +36,10 @@ object Element:
 
 end Element
 
+
 import Element.elem
 
-// Listing 10.1 · Defining an abstract method and class.
+// Listing 10.13 · Element with widen and heighten methods.
 abstract class Element:
   def contents: Vector[String]
 
@@ -80,7 +82,7 @@ end Element
 
 object LayoutElement {
   def main(args: Array[String]): Unit = {
-    println("example [\n" + example + "\n")
+    println("example [\n" + example + "\n]")
   }
 
   def example: Element = {

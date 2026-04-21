@@ -10,6 +10,7 @@ object Ex09 {
     def contents: Vector[String]
     def height: Int = contents.length
     def width: Int = if height == 0 then 0 else contents(0).length
+    override def toString: String = contents.mkString("\n")
 
   // Listing 10.5 · Defining contents as a parametric field
   class VectorElement(val contents: Vector[String]) extends Element

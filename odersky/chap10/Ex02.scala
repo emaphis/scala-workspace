@@ -9,6 +9,7 @@ object Ex02 {
     def contents: Vector[String]
     def height: Int = contents.length
     def width: Int = if height == 0 then 0 else contents(0).length
+    override def toString: String = contents.mkString("\n")
 
   // Listing 10.3 · Defining VectorElement as a subclass of Element.
   class VectorElement(conts: Vector[String]) extends Element:
@@ -24,7 +25,7 @@ object Ex02 {
     val helloLen = "hello".length
     println()
 
-    val e: Element = VectorElement((Vector("hello")))
+    val e: Element = VectorElement(Vector("hello"))
 
     println("a123 [" + a123 + "]")
     println("abcLen [" + abcLen + "]")

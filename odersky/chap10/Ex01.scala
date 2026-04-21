@@ -14,6 +14,8 @@ object Ex01 {
     def height: Int = contents.length
     def width: Int = if height == 0 then 0 else contents(0).length
 
+    override def toString: String = contents.mkString("\n")
+
 
   def main(args: Array[String]): Unit = {
     val elem = new Element {
