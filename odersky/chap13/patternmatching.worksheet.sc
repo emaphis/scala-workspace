@@ -39,3 +39,43 @@ def simplifyTop(expr: Expr): Expr =
     case _  => expr
 
 simplifyTop(UnOp("-", UnOp("-", Var("x"))))
+
+// Listing 13.3 · A pattern match with an empty “default” case.
+def checkBinary(expr: Expr): Unit =
+  expr match
+    case BinOp(op, left, right) =>
+      println(s"$expr is a binary operation")
+    case _ =>
+
+val varExpr = Var("var")
+val zeroExpr = Num(0)
+val binopExpr = BinOp("=", varExpr, varExpr)
+val unopExpr = UnOp("abs", Num(3))
+
+checkBinary(varExpr)
+checkBinary(binopExpr)
+
+// Listing 13.4 · A pattern match with wildcard patterns.
+def checkBinary2 (expr: Expr): String =
+  expr match
+    case BinOp(_, _, _) =>  s"$expr is a binary operation"
+    case _  => "Its's something else"
+
+checkBinary2(varExpr)
+checkBinary2(binopExpr)
+
+// Listing 13.5 · A pattern match with constant patterns.
+def describe(x: Any): String =
+  x match
+    case 5 => "five"
+    case true  => "truth"
+    case "hello" => "hi"
+    case Nil => "the empty list"
+    case _ => "Something else"
+
+describe(5)
+describe(true)
+describe("hello")
+describe(Nil)
+describe(List(1,2,3))
+
