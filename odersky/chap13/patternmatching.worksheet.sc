@@ -210,3 +210,61 @@ def simplifyAll(expr: Expr): Expr =
       BinOp(op, simplifyAll(l), simplifyAll(r))
     case _ => expr
 
+// 13.5 Sealed classes
+
+def describe(e: Expr): String =
+  e match
+    case Num(_) => "a number"
+    case Var(_) => "a variable"
+
+// 13.6 Pattern matching Options
+
+val capitals = Map("France"-> "Paris", "Japan"-> "Tokyo")
+
+def show(x: Option[String]): String =
+  x match
+    case Some(s)  => s
+    case None  => "?"
+
+show(capitals.get("Japan"))
+show(capitals.get("France"))
+show(capitals.get("North Pole"))
+
+// 13.7 Patterns everywhere
+// Patterns in variable definitions
+
+val myTuple = (123, "abc")
+val (number, string) = myTuple
+
+val exp = BinOp("*", Num(5), Num(1))
+val BinOp(op1, left1, right1) = exp
+
+// Case sequences as partial functions
+
+val withDefault: Option[Int] => Int =
+  case Some(x) => x
+  case None => 0
+  
+withDefault(Some(10))
+withDefault(None)
+
+//val second: List[Int] => Int =
+//  case x :: y :: _ => y
+
+val second: PartialFunction[List[Int], Int] =
+  case x :: y :: _ => y
+
+second(List(5, 6, 7))
+
+second.isDefinedAt(List(5, 6, 7))
+second.isDefinedAt(List())
+
+// Patterns in for expressions
+
+for (country, city) <- capitals yield
+  s"The capital of $country is $city"
+
+// Listing 13.19 · Picking elements of a list that match a pattern
+val results = List(Some("apple"), None, Some("orange"))
+
+for case Some(fruit) <- results yield fruit

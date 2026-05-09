@@ -129,7 +129,7 @@ object Misc {
       case BinOp("+", x, y) if x == y =>
         BinOp("*", x, Num(2))
       case _ => e
-  
+
   // 13.4 Pattern overlaps
 
   // Listing 13.15 · Match expression in which case order matters.
@@ -146,6 +146,33 @@ object Misc {
       case BinOp(op, l, r) =>
         BinOp(op, simplifyAll(l), simplifyAll(r))
       case _ => expr
+
+  // 13.5 Sealed classes
+
+  def describe(e: Expr): String =
+    (e: @unchecked) match
+      case Num(_) => "a number"
+      case Var(_) => "a variable"
+
+
+  // 13.6 Pattern matching Options
+
+  val capitals = Map("France" -> "Paris", "Japan" -> "Tokyo")
+
+  def show(x: Option[String]): String =
+    x match
+      case Some(s) => s
+      case None => "?"
+
+  // 13.7 Patterns everywhere   
+
+  // Case sequences as partial functions
+  val withDefault: Option[Int] => Int =
+    case Some(x) => x
+    case None => 0
+
+  val second: PartialFunction[List[Int], Int] =
+    case x :: y :: _ => y
 
 
   def main(args: Array[String]): Unit = {
@@ -206,5 +233,17 @@ object Misc {
     println(isStringArray(Array(1, 2, 3)))
 
     println(simplifyAdd(BinOp("+", Num(4), Num(4))))
+
+    println(show(capitals.get("Japan")))
+    println(show(capitals.get("France")))
+    println(show(capitals.get("North Pole")))
+
+    println(withDefault(Some(10)))
+    println(withDefault(None))
+
+    println(second(List(5, 6, 7)))
+    println(second.isDefinedAt(List(5, 6, 7)))
+    println(second.isDefinedAt(List()))
+
   }
 }
