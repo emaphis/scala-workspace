@@ -92,5 +92,15 @@ tm
 // 15.3 Selecting mutable versus immutable collections
 // See: Capitals.scala
 
+// 15.4 Initializing collections
+
+// Transformed `apply` function on companion object
+List(1, 2, 3)
+Set('a', 'b', 'c')
+import scala.collection.mutable
+mutable.Map("hi" -> 2, "there" -> 5)
+Array(1.0, 2.0, 3.0)
+
+
 // 15.5 Tuples
 // see Tuples.scala
