@@ -15,36 +15,22 @@ val q1 = q.enqueue(4)
 q
 
 
+// 18.3 Variance annotations
 
-object Queue3 {
+import chap18.Queue4
 
-  // Listing 18.1 · A basic functional queue.
+//def doesNotCompile(q: Queue4.Queue) = {}
+// missing type parameter for Queue
 
-  class Queue[T](private val leading: List[T],
-                 private val trailing: List[T]):
-    private def mirror =
-      if leading.isEmpty then
-        new Queue(trailing.reverse, Nil)
-      else
-        this
+def doesCompile(q: Queue[AnyRef]) = {}
+// def doesCompile(q: Queue[AnyRef]): Unit
 
-    def head = mirror.leading.head
 
-    def tail =
-      val q = mirror
-      new Queue(q.leading.tail, q.trailing)
+import chap18.Misc1.Cell
 
-    def enqueue(x: T) =
-      new Queue(leading, x :: trailing)
-  
-  object Queue:
-    /// Constructs a queue with initial elements 'xs'
-    def apply[T](xs: T*) = new Queue[T](xs.toList, Nil)
-}
+val c1 = new Cell[String]("abc")
+//val c2: Cell[Any] = c1
+//c2.set(1)
+//val s: String = c2
 
-def run3(): Unit =
-  val q = Queue3.Queue[Int]().enqueue(1).enqueue(2)
-  println(q)
-  
-run3()
 

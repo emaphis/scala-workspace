@@ -12,6 +12,9 @@ object Queue1:
     def tail = new SlowAppendQueue(elems.tail)
     def enqueue(x: T) = SlowAppendQueue(elems ::: List(x))
 
+    override def toString: String =
+      elems.mkString("Queue(", ", ", ")")
+
 
   def main(args: Array[String]): Unit =
     val q = new SlowAppendQueue(Nil).enqueue(1).enqueue(2)
