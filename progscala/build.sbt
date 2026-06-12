@@ -1,4 +1,4 @@
-val scala3 = "3.8.3"
+val scala3 = "3.8.4"
 
 lazy val root = project
   .in(file("."))
@@ -23,8 +23,8 @@ lazy val root = project
       "org.scala-lang.modules" %% "scala-parser-combinators" % "2.4.0",
      //"ch.qos.logback"          %S% "logback-classic"  % "1.5.32",
       "org.scalacheck"         %% "scalacheck"       % "1.19.0" % Test,
-      "org.scalameta"          %% "munit"            % "1.2.3" % Test,
-      "org.scalameta"          %% "munit-scalacheck" % "1.2.0" % Test,
+      "org.scalameta"          %% "munit"            % "1.3.3" % Test,
+      "org.scalameta"          %% "munit-scalacheck" % "1.3.0" % Test,
       "com.eed3si9n.expecty"   %% "expecty"          % "0.17.1" % Test,
     ),
         // For Scala 3
