@@ -1,4 +1,4 @@
-# Repo for Programming in Scala - 5th Edition
+﻿# Repo for Programming in Scala - 5th Edition
 
 Chapters
 
