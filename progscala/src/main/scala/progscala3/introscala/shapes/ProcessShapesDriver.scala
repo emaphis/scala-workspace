@@ -2,7 +2,7 @@
 package progscala3.introscala.shapes
 
 @main
-def ProcessShapesDriver =
+def ProcessShapesDriver(): Unit =
 
     val messages = Seq(
         Draw(Circle(Point(0.0,0.0), 1.0)),

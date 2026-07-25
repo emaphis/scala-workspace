@@ -14,6 +14,6 @@
 
 ./progscala
 
-## Projects for Scala MOOC.
+## Projects for Scala MOOC
 
 ./mooc

@@ -8,9 +8,9 @@ lazy val root = project
     scalaVersion := scala3,
     organization := "org.programming-scala",
     organizationName := "ProgrammingScala",
-    organizationHomepage := Some(url("https://programming-scala.org")),
-    homepage := Some(url("https://github.com/deanwampler/programming-scala-book-code-examples/")),
-    licenses += "Apache2" -> url("https://www.apache.org/licenses/LICENSE-2.0"),
+    organizationHomepage := Some(uri("https://programming-scala.org")),
+    homepage := Some(uri("https://github.com/deanwampler/programming-scala-book-code-examples/")),
+    licenses += "Apache2" -> uri("https://www.apache.org/licenses/LICENSE-2.0"),
     maxErrors := 10,
 
     libraryDependencies ++= Seq(
@@ -23,7 +23,7 @@ lazy val root = project
       "org.scala-lang.modules" %% "scala-parser-combinators" % "2.4.0",
      //"ch.qos.logback"          %S% "logback-classic"  % "1.5.37",
       "org.scalacheck"         %% "scalacheck"       % "1.19.0" % Test,
-      "org.scalameta"          %% "munit"            % "1.3.3" % Test,
+      "org.scalameta"          %% "munit"            % "1.3.4" % Test,
       "org.scalameta"          %% "munit-scalacheck" % "1.3.0" % Test,
       "com.eed3si9n.expecty"   %% "expecty"          % "0.17.1" % Test,
     ),
