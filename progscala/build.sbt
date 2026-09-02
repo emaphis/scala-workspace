@@ -16,14 +16,14 @@ lazy val root = project
     libraryDependencies ++= Seq(
     //  "com.typesafe.akka"      %% "akka-actor-typed" % "2.6.20",
     //  "com.typesafe.akka"      %% "akka-slf4j"       % "2.6.20",
-    //).map(dep => dep.cross(CrossVersion.for3Use2_13)) ++ Seq(
+    //.map(dep => dep.cross(CrossVersion.for3Use2_13)) ++ Seq(
       // Libraries that already fully support Scala 3:
       //"org.typelevel"          %% "cats-core"        % "2.13.0",
       "org.scala-lang"         %% "scala3-staging"   % scalaVersion.value,
       "org.scala-lang.modules" %% "scala-parser-combinators" % "2.4.0",
      //"ch.qos.logback"          %S% "logback-classic"  % "1.5.37",
-      "org.scalacheck"         %% "scalacheck"       % "1.19.0" % Test,
-      "org.scalameta"          %% "munit"            % "1.3.4" % Test,
+      "org.scalacheck"         %% "scalacheck"       % "1.20.0" % Test,
+      "org.scalameta"          %% "munit"            % "1.3.5" % Test,
       "org.scalameta"          %% "munit-scalacheck" % "1.3.0" % Test,
       "com.eed3si9n.expecty"   %% "expecty"          % "0.17.1" % Test,
     ),
