@@ -9,4 +9,5 @@ lazy val root = project
     scalaVersion := scala3Version,
 
     libraryDependencies += "org.scalameta" %% "munit" % "1.3.6" % Test
+    //javaSource := (javaSource.value ++ Seq(file("src/main/java"))).map(_.relativeTo(baseDirectory).get)
   )
