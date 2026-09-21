@@ -173,8 +173,3 @@ customGreeter.greet("Scala developer")
 // that takes one argument: an array of strings.
 
 // See App.scals
-
-
-
-
-6688
