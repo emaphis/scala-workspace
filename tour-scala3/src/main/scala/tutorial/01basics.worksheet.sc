@@ -1,5 +1,7 @@
 // Basics
 
+scala.util.Properties.versionNumberString
+
 //* Expressions *
 // Computable statements
 
@@ -45,8 +47,9 @@ println({
 //* Functions *
 // Expressions that have parameters and take arguments
 
-
-(x: Int) => x + 1
+{
+  (x: Int) => x + 1
+}
 
 // Name functions
 val addOne = (x: Int) => x + 1

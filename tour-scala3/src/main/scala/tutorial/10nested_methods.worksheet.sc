@@ -1,8 +1,10 @@
+import scala.annotation.tailrec
 // Nested Methods
 
 // In Scala, it is possible to nest method definitions.
 
 def factorial(x: Int): Int =
+  @tailrec
   def fact(x: Int, accumulator: Int): Int =
     if x <= 1 then accumulator
     else fact(x -1, x * accumulator)

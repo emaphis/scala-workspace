@@ -33,5 +33,3 @@ planets.foreach {
 val numPairs = List((2, 5), (3, -7), (20, 56))
 for (a, b) <- numPairs do
   println(a * b)
-
-  

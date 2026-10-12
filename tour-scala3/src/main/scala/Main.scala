@@ -2,4 +2,5 @@
   println("Hello world!")
   println(msg)
 
-def msg = "I was compiled by Scala 3. :)"
+val version: String = scala.util.Properties.versionNumberString
+def msg = s"I was compiled by Scala $version. :)"

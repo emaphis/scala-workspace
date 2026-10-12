@@ -7,7 +7,7 @@ class User
 
 val user1 = User()
 
-// User has a default constructor which takes no arguments because no constructor was define
+// User has a default constructor which takes no arguments because no constructor was defined
 // However, you’ll often want a constructor and class body.
 
 class Point(var x: Int, var y: Int):
@@ -16,7 +16,7 @@ class Point(var x: Int, var y: Int):
         x = x + dx
         y = y + dy
 
-    override def toString(): String =
+    override def toString: String =
         s"($x, $y)"
 end Point
 
@@ -31,7 +31,7 @@ println(point1)
 // Constructors can have optional parameters by providing a default value like so:
 
 class Point2(var x: Int = 0, var y: Int = 0):
-    override def toString(): String =
+    override def toString: String =
         s"($x, $y)"
 
 val origin = Point2()
@@ -54,7 +54,7 @@ class Point3:
     def x: Int = _x
     def x_=(newValue: Int): Unit =
         if newValue < bound then
-            _y = newValue
+            _x = newValue
         else
             printWarning()
 

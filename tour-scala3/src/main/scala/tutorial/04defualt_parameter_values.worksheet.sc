@@ -2,7 +2,7 @@
 
 // Scala provides the ability to give parameters default values that can be used to allow a caller to omit those parameters.
 
-def log(message: String, level: String = "INFO") =
+def log(message: String, level: String = "INFO"): Unit =
     println(s"$level: $message")
 
 log("System starting")
